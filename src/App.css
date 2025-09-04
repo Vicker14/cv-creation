@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    background: var(--color-light);
+    color: var(--color-dark);
+
+    font-family: 'nunito sans';
+    font-size: 1rem;
+    font-weight: 400;
+
+    --color-dark: hsl(0, 0%, 0%);
+    --color-second: hsl(211, 37%, 85%);
+    --color-light: hsl(from var(--color-second) h s 97);
+}
+
+body {
+    padding: 0;
+    margin: 4rem 0;
+    border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 600;
+
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}

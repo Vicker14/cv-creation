@@ -1,12 +1,31 @@
+import { useState } from 'react'
 import './App.css'
 
-function App() {
+import Form from './components/Form'
+import Preview from './components/Preview'
+
+export default function App() {
+
+  const [formData, setFormData] = useState({
+    name: "",
+    lastName: "",
+    phone: "",
+    email: ""
+  })
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value 
+    }));
+  }
 
   return (
-    <>
-      <h1>Initial commit</h1>
-    </>
+    <div className='body'>
+      <Form formData={formData} handleChange={handleChange} />
+      <Preview formData={formData} />
+    </div>
   )
 }
-
-export default App

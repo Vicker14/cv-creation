@@ -1,0 +1,10 @@
+.preview {
+    height: 60rem;
+    aspect-ratio: 210 / 297;
+    background-color: white;
+    box-shadow: 0.3rem 0.3rem 1rem hsl(from var(--color-second) h s 50 / 0.2);
+
+    & div {
+        margin: 1rem;
+    }
+}

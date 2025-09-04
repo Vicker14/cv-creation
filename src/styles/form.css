@@ -1,0 +1,54 @@
+.form {    
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    
+    background-color: var(--color-second);
+    box-shadow: 0rem 0.3rem 0.8rem hsl(from var(--color-second) h s 50 / 0.3);
+
+    border: 0.15rem solid hsl(from var(--color-light) h s l / 0.2);
+
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+
+    & div {
+        display: flex;
+        gap: 2rem;
+        
+        margin: 0.5rem 0 2rem;
+    }
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 1.5rem;
+
+    box-sizing: content-box;
+    padding-left: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+
+    background-color: var(--color-light);
+
+    &:focus-visible {
+        outline: 0.17rem solid hsl(from var(--color-second) h s calc(l - 10));
+        box-shadow: 0rem 0.15rem 0.4rem hsl(from var(--color-second) h s 50 / 0.3);
+    }   
+}
