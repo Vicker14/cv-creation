@@ -5,12 +5,13 @@
     color: var(--color-dark);
 
     font-family: 'nunito sans';
-    font-size: 1rem;
+    font-size: var(--size-font);
     font-weight: 400;
 
     --color-dark: hsl(0, 0%, 0%);
     --color-second: hsl(211, 37%, 85%);
     --color-light: hsl(from var(--color-second) h s 97);
+    --size-font: 1rem;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
+    font-size: var(--size-font);
     font-weight: 600;
 
     padding: 0;
