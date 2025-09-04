@@ -28,7 +28,11 @@ form {
         display: flex;
         gap: 2rem;
         
-        margin: 0.5rem 0 2rem;
+        margin: 0.5rem 0 0;
+    }
+
+    & div:nth-child(2) {
+        margin-bottom: 1rem;
     }
 }
 
@@ -51,4 +55,40 @@ input {
         outline: 0.17rem solid hsl(from var(--color-second) h s calc(l - 10));
         box-shadow: 0rem 0.15rem 0.4rem hsl(from var(--color-second) h s 50 / 0.3);
     }   
+}
+
+button {
+    height: 1.5rem;
+    margin-top: 2rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    color: var(--color-dark);
+    background-color: hsl(from var(--color-light) h s calc(l - 20));
+
+    &:hover {
+        background-color: hsl(from var(--color-light) h s calc(l - 30));
+        cursor: pointer;
+    }
+}
+
+.eduItem, .praItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    margin: 1rem 0 0 0;
+}
+
+.eduItem svg, .praItem svg {
+    position: absolute;
+
+    top: 50%;
+    left: 100%;
+    transform: translate(-150%, -50%);
+
+    &:hover {
+        cursor: pointer;
+    }
 }

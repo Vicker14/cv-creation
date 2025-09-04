@@ -59,3 +59,17 @@
         margin-right: 0.7rem;
     }
 }
+
+.main {
+    margin: 5rem 0 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -10,7 +10,9 @@ export default function App() {
     name: "",
     lastName: "",
     phone: "",
-    email: ""
+    email: "",
+    education: [],
+    practice: []
   })
 
   const handleChange = (e) => {
@@ -24,7 +26,7 @@ export default function App() {
 
   return (
     <div className='body'>
-      <Form formData={formData} handleChange={handleChange} />
+      <Form formData={formData} setFormData={setFormData} handleChange={handleChange} />
       <Preview formData={formData} />
     </div>
   )
